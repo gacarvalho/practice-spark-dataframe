@@ -1,6 +1,6 @@
-## PRÁTICA COM O FRAMEWORK SPARK 🐸
+## PRÁTICA COM O FRAMEWORK SPARK 🟠
 
-O objetivo desse repositório é demonstrar uma prática com o framework Spark, uma ferramenta fantástica para processamento distribuído. Essa prática foi desenvolvida no docker!
+O objetivo desse repositório é demonstrar uma prática com o framework Spark com scala, uma ferramenta fantástica para processamento distribuído. Essa prática foi desenvolvida no docker!
 
 ---
 
@@ -106,7 +106,7 @@ scala> jurosHiveDF.show(5)
 
 Agora vamos salvar o "jurosHiveDF" no formato parquet no HDFScom o comando:
 ``` bash
-scala> jurosHiveDF.WRITE.PARQUET("/user/aluno/gabriel/data/save_juros")
+scala> jurosHiveDF.write.parquet("/user/aluno/gabriel/data/save_juros")
 ``` 
 ![Etapa 9](https://github.com/gacarvalho/practice-spark-dataframe/blob/main/Spark%20-%20DataFrame/Exercicio_11.png?raw=true)
 
@@ -117,7 +117,7 @@ $ hdfs dfs -ls /user/aluno/gabriel/data/save_juros
 ![Etapa 9.1](https://github.com/gacarvalho/practice-spark-dataframe/blob/main/Spark%20-%20DataFrame/Exercicio_12.png?raw=true)
 
 
-📢 ETAPA 10: SALVANDO NO FORMATO PARQUET
+📢 ETAPA 10: VISUALIZANDO O PARQUET pelo Spark
 
 > Criar o DataFrame jurosHDFS para ler o diretório do “save_juros” da etapa anterior
 > Visualizar o Schema do jurosHDFS
